@@ -2,6 +2,8 @@ Description
 ==================
 This Image serves the purpose of testing your Symfony application with Apache 2.4.7 and Php-Fpm-7 before upgrading your Apache and Php for optimal performance.This image runs the composer install inside /var/www/localhost/htdocs. This image reduces the load of Apache by using Php-Fpm instead of mod-php.Using mod_php each Apache worker has the entire PHP interpreter loaded into it. Because Apache needs one worker process per incoming request, you can quickly end up with hundreds of Apache workers in use, each with their own PHP interpreter loaded, consuming huge amounts of memory.To address this issue Php is configured as a CGI process.Configuration has been crafted  keeping in view CGI application vulnerability. The image is immune to *httpoxy vulnerability*.This image outputs the logs to stdout.
 
+*The Image size is 87.82 MB*
+
 To Start the Container
 -------------------------------
 ```docker run --name apache smtripat/alpine-apache-php-fpm:latest```
