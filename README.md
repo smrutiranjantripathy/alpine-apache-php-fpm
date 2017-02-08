@@ -35,12 +35,12 @@ apache:
     - /path/to/docroot:/var/www/localhost/htdocs
 ```
 
-To get Shell Access inside container
+To get Shell Access inside the container
 ------------------------------------
 To get access as site user
-docker exec -it <container-name> su site
+```docker exec -it <container-name> su site````
 To get access as root user
-docker exec -it <container-name> /bin/ash
+```docker exec -it <container-name> /bin/ash```
 
 > Please free feel free to raise issues.
 
