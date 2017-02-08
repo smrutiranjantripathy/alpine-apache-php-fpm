@@ -39,6 +39,7 @@ To get Shell Access inside the container
 ------------------------------------
 To get access as site user
 ```docker exec -it <container-name> su site````
+
 To get access as root user
 ```docker exec -it <container-name> /bin/ash```
 
